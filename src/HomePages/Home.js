@@ -9,12 +9,14 @@ function Home(){
     return (
         <div>
       
+        {/* Render the HeroSection component with data from homeObjOne */}
         <HeroSection {...homeObjOne} />
         <HeroSection {...homeObjThree} />
         <HeroSection {...homeObjTwo} />
         <HeroSection {...homeObjFour} />
-        
+         {/* Render the Contact component */}
         <Contact/>
+        {/* Render the GoogleMap component */}
         <GoogleMap />
      
    

@@ -1,5 +1,5 @@
 
-import Services from './Components/Services';
+
 import Navbar from './Components/Navbar';
 import Footer from './Components/Footer';
 import Home from './HomePages/Home';
@@ -10,7 +10,7 @@ import Forms from './Components/Forms';
 import Contact from './Components/Contact';
 
 function App() {
-
+  // Define the root component of the application
 return (
   <Router>
   <Navbar/>

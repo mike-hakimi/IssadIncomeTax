@@ -1,15 +1,16 @@
+// Define data objects for different sections
 export const homeObjOne = {
-    lightBg: false,
-    lightText: true,
-    lightTextDesc: true,
-    topLine: 'Issad Income Tax',
-    headline: 'WE ARE AN ACCOUNTING AND TAX PREPARATION FIRM',
+    lightBg: false, // Background color - light (false)
+    lightText: true, // Text color - light (true)
+    lightTextDesc: true, // Text description color - light (true)
+    topLine: 'Issad Income Tax', // Top-line text
+    headline: 'WE ARE AN ACCOUNTING AND TAX PREPARATION FIRM', // Main headline text
     description:
       'We provide high quality and satisfaction guranteed services.',
-    buttonLabel: 'Get Started',
-    imgStart: 'start',
-    img: 'images/Issadimage2.jpg',
-    alt: 'Credit Card'
+    buttonLabel: 'Get Started',  // Button label, right now no button
+    imgStart: 'start', // Image start position
+    img: 'images/Issadimage2.jpg', // Image source URL
+    alt: 'Main page image' // Image alt text
   };
   
   export const homeObjTwo = {
@@ -23,7 +24,7 @@ export const homeObjOne = {
     buttonLabel: 'Learn More',
     imgStart: '',
     img: 'images/Issadimage4.jpg',
-    alt: 'Vault'
+    alt: 'Accounting/Bookkeeping'
   };
   
   export const homeObjThree = {
@@ -37,7 +38,7 @@ export const homeObjOne = {
     buttonLabel: 'Start Now',
     imgStart: 'start',
     img: 'images/Issadimage1.jpg',
-    alt: 'Vault'
+    alt: 'Payrol-image'
   };
   
   export const homeObjFour = {
@@ -51,5 +52,5 @@ export const homeObjOne = {
     buttonLabel: 'Sign Up Now',
     imgStart: 'start',
     img: 'images/Issadimage3.jpg',
-    alt: 'Vault'
+    alt: 'SalesTax-image'
   };

@@ -4,24 +4,24 @@ import {FaBars, FaClipboardList, FaTimes } from 'react-icons/fa';
 import '../StyleComponents/Navbar.css';
 import Contact from './Contact';
 import Forms from './Forms';
-// import Services from './Services';
 
+// Define the Navbar component
 function Navbar() {
+    // Create state to manage the click event for mobile menu
     const [click, setClick] = useState(false);
+
+     // Function to handle the click event for mobile menu
     const handleClick = () => setClick(!click);
+
+        // Function to close the mobile menu
     const closeMobileMenu = () => setClick(false);
      
-    // Function to scroll to a section with a given ID
-  const scrollToSection = (sectionId) => {
-    const section = document.getElementById(sectionId);
-    if (section) {
-      section.scrollIntoView({ behavior: 'smooth' });
-      closeMobileMenu(); // Close the mobile menu after clicking a link
-    }
-}
+
   return (
     <div className='navbar'>
      <div className='navbar-container'>
+     {/* Define navigation links */}
+
       <Link to='/' className="navbar-logo" onClick={closeMobileMenu}>
          Issad Income Tax
       </Link>
@@ -30,6 +30,7 @@ function Navbar() {
     </div>
 <ul className={click ? 'nav-menu active' : 'nav-menu'}>
     <li className='nav-item'>
+      {/* Use onClick to trigger scrolling */}
     <Link to='/' className='nav-links' onClick={closeMobileMenu}>
       Home
     </Link>

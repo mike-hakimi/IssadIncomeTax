@@ -1,16 +1,21 @@
+// Import necessary libraries and components for the Contact component
 import React, { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 import styled from "styled-components";
 
 
 const Contact = () => {
+    // Create a reference to the form element
   const form = useRef();
 
+   // Define state to manage the success message
   const [isSuccess, setIsSuccess] = useState(false);
 
+  // Function to send an email when the form is submitted
   const sendEmail = (e) => {
     e.preventDefault();
 
+     // Use EmailJS to send the form data
     emailjs
       .sendForm(
         "service_mnw2wq7",
@@ -40,7 +45,7 @@ const Contact = () => {
   return (
    
     <StyledContactForm>
-       
+          {/* Display a success message if isSuccess is true */}
 
         {isSuccess ? (
             <SuccessMessage>Message sent successfully!</SuccessMessage>
@@ -48,7 +53,7 @@ const Contact = () => {
            
        
  <form ref={form} onSubmit={sendEmail}>
-      <h4>Please contact us, if you have any questions. Include your contact info.</h4>
+      <h4>Please contact us, if you have any questions.</h4>
    <label>Name</label>
    <input type="text" name="user_name" />
    <label>Email</label>
@@ -71,14 +76,8 @@ export default Contact;
 
 
 
-// Rest of your styling
 
-
-
-
-
-
-// Styles
+// Styles for Contact component
 
 const SuccessMessage = styled.div `
 color: green;

@@ -1,3 +1,4 @@
+// Import necessary libraries and components for the Footer component
 import React from 'react';
 import '../StyleComponents/Footer.css';
 
@@ -14,7 +15,9 @@ import { MdFingerprint } from 'react-icons/md';
 function Footer() {
   return (
     <div className='footer-container'>
+    {/* Define the footer section */}
       <section className='footer-subscription'>
+        {/* Display address */}
         <p className='footer-subscription-heading'>
         Address:
         </p>
@@ -37,7 +40,8 @@ function Footer() {
       </section>
       <div className='footer-links'>
         <div className='footer-link-wrapper'>
-
+        
+          {/* Define footer links */}
         <div className='footer-link-items'>
             <h2>SMALL BUSINESS FILING</h2>
            
