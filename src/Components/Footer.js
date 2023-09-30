@@ -71,7 +71,7 @@ function Footer() {
           <div className='footer-logo'>
             <Link to='/' className='social-logo'>
              
-              Issad Income Tax
+             Web Design by Hakimi
             </Link>
           </div>
           <small className='website-rights'>Issad Income Tax © 2023</small>
