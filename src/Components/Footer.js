@@ -71,10 +71,10 @@ function Footer() {
           <div className='footer-logo'>
             <Link to='/' className='social-logo'>
              
-             Web Design by Hakimi
+             Issad Income Tax
             </Link>
           </div>
-          <small className='website-rights'>Issad Income Tax © 2023</small>
+          <small className='website-rights'> Web Design by Hakimi © 2023</small>
           <div className='social-icons'>
             <Link
               className='social-icon-link'
