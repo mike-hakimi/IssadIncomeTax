@@ -32,7 +32,7 @@ function Navbar() {
     <li className='nav-item'>
       {/* Use onClick to trigger scrolling */}
     <Link to='/' className='nav-links' onClick={closeMobileMenu}>
-      Home
+      Home |
     </Link>
     </li>
 
@@ -44,13 +44,13 @@ function Navbar() {
       className='nav-links'
       onClick={closeMobileMenu}
     >
-      Contact & Schedule
+      Contact |   Schedule
     </Link>
   </li>
 
     <li className='nav-item'>
     <Link to='/about' className='nav-links' onClick={closeMobileMenu}>
-      About
+      About |
     </Link>
     </li>
 
