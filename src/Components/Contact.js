@@ -2,6 +2,7 @@
 import React, { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 import styled from "styled-components";
+import Booking from "./Booking";
 
 
 const Contact = () => {
@@ -45,6 +46,7 @@ const Contact = () => {
   return (
    
     <StyledContactForm>
+    <Booking />
           {/* Display a success message if isSuccess is true */}
 
         {isSuccess ? (
@@ -70,6 +72,9 @@ const Contact = () => {
 };
 
 export default Contact;
+
+
+
 
 
 

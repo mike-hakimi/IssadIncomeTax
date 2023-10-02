@@ -3,6 +3,7 @@ import HeroSection from '../Components/HeroSection.js';
 import { homeObjOne, homeObjTwo, homeObjThree, homeObjFour } from './Data';
 import Contact from '../Components/Contact.js';
 import GoogleMap from '../Components/GoogleMap.js';
+import Booking from '../Components/Booking.js';
 
 
 function Home(){
@@ -15,9 +16,12 @@ function Home(){
         <HeroSection {...homeObjTwo} />
         <HeroSection {...homeObjFour} />
          {/* Render the Contact component */}
-        <Contact/>
+       
+         <Contact/>
         {/* Render the GoogleMap component */}
+        
         <GoogleMap />
+      
      
    
         
